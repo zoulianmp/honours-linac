@@ -1,0 +1,14 @@
+# ---------------------------------------
+# Patient
+# ---------------------------------------
+
+/gate/world/daughters/name patient
+/gate/world/daughters/insert box
+/gate/patient/setMaterial Water
+/gate/patient/placement/setTranslation 0 0 0 mm
+/gate/patient/geometry/setXLength 120 mm
+/gate/patient/geometry/setYLength 120 mm
+/gate/patient/geometry/setZLength 350 mm
+/gate/patient/vis/setColor blue
+
+/gate/patient/placement/setTranslation 0 0 -175 mm

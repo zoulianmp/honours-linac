@@ -1,0 +1,90 @@
+# -----------------------------------------------------
+# BEAM LIMITING DEVICE Y
+# James Keal, 23-MAY-2016
+# -----------------------------------------------------
+
+/gate/mylinacGantry/daughters/name                  backupY
+/gate/mylinacGantry/daughters/insert                box
+/gate/backupY/setMaterial                           Air
+/gate/backupY/geometry/setXLength                   500.0 mm
+/gate/backupY/geometry/setYLength                   500.0 mm
+/gate/backupY/geometry/setZLength                   78.0 mm
+/gate/backupY/placement/setTranslation              0.0 0.0 -32.045 cm
+/gate/backupY/placement/setRotationAxis             0 0 1
+/gate/backupY/placement/setRotationAngle            -90 deg
+/gate/backupY/vis/setVisible                        0
+
+
+# -----------------------------------------------------
+# ss_boite colli backup Y gauche
+# -----------------------------------------------------
+
+/gate/backupY/daughters/name                        backupY_1
+/gate/backupY/daughters/insert                      box
+/gate/backupY_1/setMaterial                         Air
+/gate/backupY_1/geometry/setXLength                 188.0 mm
+/gate/backupY_1/geometry/setYLength                 120.0 mm
+/gate/backupY_1/geometry/setZLength                 78.0 mm
+
+/gate/backupY_1/daughters/name                      backupY_1_Kill_Plane
+/gate/backupY_1/daughters/insert                    box
+/gate/backupY_1_Kill_Plane/setMaterial              Vacuum
+/gate/backupY_1_Kill_Plane/geometry/setXLength      187.96 mm
+/gate/backupY_1_Kill_Plane/geometry/setYLength      119.38 mm
+/gate/backupY_1_Kill_Plane/geometry/setZLength      1 nm
+/gate/backupY_1_Kill_Plane/placement/setTranslation 0.0 0.0 38.862 mm
+/gate/backupY_1_Kill_Plane/vis/setColor             blue
+/gate/backupY_1_Kill_Plane/vis/setVisible           1
+
+/gate/backupY_1/daughters/name                      backupY_1_Leaf
+/gate/backupY_1/daughters/insert                    box
+/gate/backupY_1_Leaf/setMaterial                    AcceleratorCollimatorLeafMaterial
+/gate/backupY_1_Leaf/geometry/setXLength            187.96 mm
+/gate/backupY_1_Leaf/geometry/setYLength            119.38 mm
+/gate/backupY_1_Leaf/geometry/setZLength            77.724 mm
+/gate/backupY_1_Leaf/placement/setTranslation       0.0 0.0 0.0 mm
+/gate/backupY_1_Leaf/vis/setColor                   yellow
+/gate/backupY_1_Leaf/vis/setVisible                 1
+
+
+# -----------------------------------------------------
+# ss_boite colli backup Y droite
+# -----------------------------------------------------
+
+/gate/backupY/daughters/name                        backupY_2
+/gate/backupY/daughters/insert                      box
+/gate/backupY_2/setMaterial                         Air
+/gate/backupY_2/geometry/setXLength                 188.0 mm
+/gate/backupY_2/geometry/setYLength                 120.0 mm
+/gate/backupY_2/geometry/setZLength                 78.0 mm
+
+/gate/backupY_2/daughters/name                      backupY_2_Kill_Plane
+/gate/backupY_2/daughters/insert                    box
+/gate/backupY_2_Kill_Plane/setMaterial              Vacuum
+/gate/backupY_2_Kill_Plane/geometry/setXLength      187.96 mm
+/gate/backupY_2_Kill_Plane/geometry/setYLength      119.38 mm
+/gate/backupY_2_Kill_Plane/geometry/setZLength      1 nm
+/gate/backupY_2_Kill_Plane/placement/setTranslation 0.0 0.0 38.862 mm
+/gate/backupY_2_Kill_Plane/vis/setColor             blue
+/gate/backupY_2_Kill_Plane/vis/setVisible           1
+
+/gate/backupY_2/daughters/name                      backupY_2_Leaf
+/gate/backupY_2/daughters/insert                    box
+/gate/backupY_2_Leaf/setMaterial                    AcceleratorCollimatorLeafMaterial
+/gate/backupY_2_Leaf/geometry/setXLength            187.96 mm
+/gate/backupY_2_Leaf/geometry/setYLength            119.38 mm
+/gate/backupY_2_Leaf/geometry/setZLength            77.724 mm
+/gate/backupY_2_Leaf/placement/setTranslation       0.0 0.0 0.0 mm
+/gate/backupY_2_Leaf/vis/setColor                   yellow
+/gate/backupY_2_Leaf/vis/setVisible                 1
+
+
+# -----------------------------------------------------
+# Translation & Motion
+# -----------------------------------------------------
+
+/gate/backupY_1/moves/insert                        genericMove
+/gate/backupY_1/genericMove/setPlacementsFilename   data/precise_Y_BLD1.placements
+
+/gate/backupY_2/moves/insert                        genericMove
+/gate/backupY_2/genericMove/setPlacementsFilename   data/precise_Y_BLD2.placements

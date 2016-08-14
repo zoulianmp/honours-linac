@@ -1,0 +1,27 @@
+###### List of placement (translation and rotation) according to time
+###### Column 1      is Time in sseconds
+###### Column 2      is Angle in degrees
+###### Columns 3,4,5 are rotation axis
+###### Columns 6,7,8 are translation in mm
+#
+# To calculate X and Y translations from rotation angle A:
+#
+# ┌   ┐   ┌                 ┐┌    ┐
+# │ Y │ = │ sin(A)   cos(A) ││ d1 │
+# │ X │   │ 1-cos(A) sin(A) ││ d2 │
+# └   ┘   └                 ┘└    ┘
+#
+#  d1 = 320.45 mm, d2 = 59.69 mm.
+#
+Time s
+Rotation deg
+Translation mm
+0       0.573   1 0 0       0.6130 -62.8917 0    # 2cm field 100cm ssd
+#0       0.859   1 0 0       0.9309 -64.4874 0    # 3cm field 100cm ssd
+#0       1.432   1 0 0       1.5918 -67.6796 0    # 5cm field 100cm ssd
+#0       2       1 0 0       2.2784 -70.8372 0
+#0       2.862   1 0 0       3.3801 -75.6158 0    # 10cm field 100cm ssd
+#0       5       1 0 0       6.4217 -87.3919 0
+#0       5.711   1 0 0       7.5304 -91.2820 0    # 20cm field 100cm ssd
+#0       10      1 0 0       15.2334 -114.4287 0
+#0       11.310  1 0 0       17.9292 -121.3766 0    # 40cm field 100cm ssd
