@@ -1,0 +1,13 @@
+ObjectType = Image
+NDims = 3
+BinaryData = True
+BinaryDataByteOrderMSB = False
+CompressedData = False
+TransformMatrix = 1 0 0 0 1 0 0 0 1
+Offset = -59.375 -59.375 -174.375
+CenterOfRotation = 0 0 0
+ElementSpacing = 1.25 1.25 1.25
+DimSize = 96 96 280
+AnatomicalOrientation = ???
+ElementType = MET_INT
+ElementDataFile = output-NbOfHits.raw
