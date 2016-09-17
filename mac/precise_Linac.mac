@@ -11,7 +11,7 @@
 /gate/mylinac/geometry/setXLength               0.7 m
 /gate/mylinac/geometry/setYLength               0.7 m
 /gate/mylinac/geometry/setZLength               1.1 m
-/gate/mylinac/vis/setColor                      white
+/gate/mylinac/vis/setColor                      black
 /gate/mylinac/vis/setVisible                    0
 /gate/mylinac/moves/insert                      genericMove
 /gate/mylinac/genericMove/setPlacementsFilename data/precise_Linac.placements

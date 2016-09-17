@@ -1,0 +1,32 @@
+# ---------------------------------------
+# Patient
+# ---------------------------------------
+
+/gate/world/daughters/name patient
+/gate/world/daughters/insert box
+/gate/patient/setMaterial Water
+/gate/patient/placement/setTranslation 0 0 0 mm
+/gate/patient/geometry/setXLength 150 mm
+/gate/patient/geometry/setYLength 150 mm
+/gate/patient/geometry/setZLength 350 mm
+/gate/patient/vis/setColor blue
+
+/gate/patient/placement/setTranslation 0 0 -175 mm
+
+/gate/patient/daughters/name inhom1
+/gate/patient/daughters/insert box
+/gate/inhom1/setMaterial Air
+/gate/inhom1/placement/setTranslation 0 0 25 mm
+/gate/inhom1/geometry/setXLength 150 mm
+/gate/inhom1/geometry/setYLength 150 mm
+/gate/inhom1/geometry/setZLength 50 mm
+/gate/inhom1/vis/setColor black
+
+/gate/patient/daughters/name inhom2
+/gate/patient/daughters/insert box
+/gate/inhom2/setMaterial RibBone
+/gate/inhom2/placement/setTranslation 0 0 -25 mm
+/gate/inhom2/geometry/setXLength 150 mm
+/gate/inhom2/geometry/setYLength 150 mm
+/gate/inhom2/geometry/setZLength 50 mm
+/gate/inhom2/vis/setColor black
