@@ -15,7 +15,7 @@
 
 /gate/patient/daughters/name inhom1
 /gate/patient/daughters/insert box
-/gate/inhom1/setMaterial Air
+/gate/inhom1/setMaterial RibBone
 /gate/inhom1/placement/setTranslation 0 0 25 mm
 /gate/inhom1/geometry/setXLength 150 mm
 /gate/inhom1/geometry/setYLength 150 mm
@@ -24,7 +24,7 @@
 
 /gate/patient/daughters/name inhom2
 /gate/patient/daughters/insert box
-/gate/inhom2/setMaterial RibBone
+/gate/inhom2/setMaterial Adipose
 /gate/inhom2/placement/setTranslation 0 0 -25 mm
 /gate/inhom2/geometry/setXLength 150 mm
 /gate/inhom2/geometry/setYLength 150 mm
