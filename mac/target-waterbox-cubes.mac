@@ -15,7 +15,7 @@
 
 /gate/patient/daughters/name inhom1
 /gate/patient/daughters/insert box
-/gate/inhom1/setMaterial Adipose
+/gate/inhom1/setMaterial Lung
 /gate/inhom1/placement/setTranslation 25 0 0 mm
 /gate/inhom1/geometry/setXLength 30 mm
 /gate/inhom1/geometry/setYLength 30 mm
@@ -24,7 +24,7 @@
 
 /gate/patient/daughters/name inhom2
 /gate/patient/daughters/insert box
-/gate/inhom2/setMaterial Adipose
+/gate/inhom2/setMaterial Lung
 /gate/inhom2/placement/setTranslation -25 0 0 mm
 /gate/inhom2/geometry/setXLength 10 mm
 /gate/inhom2/geometry/setYLength 10 mm

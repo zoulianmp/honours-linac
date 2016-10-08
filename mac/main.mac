@@ -7,7 +7,7 @@
 #-------------------oooooOOOOO00000OOOOOooooo-------------------#
 
 #/control/execute mac/verbose.mac
-#/control/execute mac/visu.mac
+/control/execute mac/visu.mac
 
 #=====================================================
 # GEOMETRY
@@ -23,7 +23,7 @@
 /gate/world/vis/setVisible 0
 
 # Target Waterbox
-/control/execute mac/target-waterbox-slabs.mac
+/control/execute mac/target-CT.mac
 
 # Linac with backup X, Y and MLC
 /gate/geometry/setMaterialDatabase  data/PreciseMaterials.db

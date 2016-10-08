@@ -1,5 +1,6 @@
 #!/bin/bash
 
+rm -rf ../honours-linac_*
 nohup ./run_multiple.sh $2 &
 N_PROC=1
 while [ $N_PROC -lt $1 ];
