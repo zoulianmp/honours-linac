@@ -23,7 +23,7 @@
 /gate/world/vis/setVisible 0
 
 # Target Waterbox
-/control/execute mac/target-CT.mac
+/control/execute mac/target-waterbox.mac
 
 # Linac with backup X, Y and MLC
 /gate/geometry/setMaterialDatabase  data/PreciseMaterials.db

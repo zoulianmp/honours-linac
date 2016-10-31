@@ -1,1 +1,1 @@
-# NumberOfKillTracks = 34720
+# NumberOfKillTracks = 17348
